@@ -1,0 +1,205 @@
+body{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #504E42;
+   
+}
+
+header{
+    text-align: center;
+    color: #3F29FA;
+}
+
+nav{
+    background-color: #FADC28;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #55517A;
+    margin-right: 30px;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+h2{
+    color:#574CBA;
+}
+
+/* Layout com CSS Grid */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.item {
+    background-color: #FADC28;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo básico da imagem */
+.img-hover {
+    transition: transform 0.3s ease;
+    width: 60%;
+    height: 80%;
+    border-radius: 5%;
+}
+
+/* Efeito de aumento ao passar o mouse */
+.img-hover:hover {
+    transform: scale(1.1); /* Aumenta em 10% */
+}
+
+/* Animação em Hover */
+.button {
+    background-color: #3F29FA;
+    color: #FADC28;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px double #574CBA;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button:hover {
+    background-color: #574CBA;
+}
+
+/* Efeito de Sombra */
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #FADC28;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer p{
+    margin: 0;
+    color: #504E42;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+thead {
+    background-color: #574CBA;
+    color: #FADC28;
+}
+
+.t1 {
+    border: 1px solid #574CBA;
+    padding: 8px;
+}
+
+.t2 {
+    background-color: #FADC28;
+}
+
+.t3 {
+    background-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, border 0.3s;
+}
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.card p {
+    font-size: 1em;
+    color: #666;
+}
+.card:nth-child(1) {
+    background-color: #ffe5e5;
+    border-color: #ff4d4d;
+}
+.card:nth-child(2) {
+    background-color: #e5ffe5;
+    border-color: #4dff4d;
+}
+
+.card:nth-child(3) {
+    background-color: #e5e5ff;
+    border-color: #4d4dff;
+}
+
+.card:nth-child(4) {
+    background-color: #fff5e5;
+    border-color: #ffb94d;
+}
+
+.card:nth-child(5) {
+    background-color: #e5f5ff;
+    border-color: #4db9ff;
+}
+.card:nth-child(1):hover {
+    transform: translateY(-10px);
+}
+.card:nth-child(2):hover {
+    transform: scale(1.05);
+}
+.card:nth-child(3):hover {
+    transform: rotate(5deg);
+}
+.card:nth-child(4):hover {
+    background-color: #ffebcc;
+    border-color: #ff9933;
+}
+.card:nth-child(5):hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
